@@ -1,0 +1,50 @@
+.titleinfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+    transition: all 0.4s;
+    box-sizing: inherit;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 40px 60px 40px 60px;
+}
+.post:hover {
+    border: 2px solid rgb(139, 139, 139);
+    box-shadow: 0px 12px 15px -13px;
+}
+.post-divider {
+    margin: 20px 0;
+    transform: scaleX(0.75);
+    transform-origin: center;
+    height: 1px;
+    background-color: rgb(209, 209, 209);
+}
+
+.dropdownmenu {
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .post {
+        padding: 30px 20px 25px 20px;
+        margin: 0 -10px;
+    }
+
+    .titleinfo div {
+        font-size: 1.2rem;
+    }
+
+    .dropdownmenu {
+        display: block;
+        transition: all 0.3s;
+    }
+    .dropdownmenu:hover {
+        box-shadow:0 3px 6px -5px;
+    }
+
+    #linkgourp {
+        display: none;
+    }
+ }
